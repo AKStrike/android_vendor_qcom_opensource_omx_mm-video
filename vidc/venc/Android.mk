@@ -24,6 +24,9 @@ libmm-venc-def += -USINGLE_ENCODER_INSTANCE
 ifeq ($(TARGET_BOARD_PLATFORM),msm7x30)
 libmm-venc-def += -DMAX_RES_720P
 endif
+ifeq ($(TARGET_BOARD_PLATFORM),msm7x27)
+libmm-venc-def += -DMAX_RES_720P
+endif
 ifeq ($(TARGET_BOARD_PLATFORM),msm8660)
 libmm-venc-def += -DMAX_RES_1080P
 endif

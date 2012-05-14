@@ -27,6 +27,10 @@ ifeq ($(TARGET_BOARD_PLATFORM),msm7x30)
 libOmxVdec-def += -DMAX_RES_720P
 libOmxVdec-def += -UPROCESS_EXTRADATA_IN_OUTPUT_PORT
 endif
+ifeq ($(TARGET_BOARD_PLATFORM),msm7x27)
+libOmxVdec-def += -DMAX_RES_720P
+libOmxVdec-def += -UPROCESS_EXTRADATA_IN_OUTPUT_PORT
+endif
 ifeq ($(TARGET_BOARD_PLATFORM),msm8660)
 libOmxVdec-def += -DMAX_RES_1080P
 libOmxVdec-def += -DPROCESS_EXTRADATA_IN_OUTPUT_PORT
